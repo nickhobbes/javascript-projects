@@ -12,6 +12,16 @@ function reverseCommas() {
 	let output;
 	//TODO: 2. write the code required for this step
 
+	if(protoArray1.includes(',')) {
+		check = protoArray1.split(',');
+		console.log(check);
+
+		let tempArr = check.reverse();
+		console.log(tempArr);
+		
+		output = tempArr.join(',');
+	}
+
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
 }
